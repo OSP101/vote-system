@@ -15,8 +15,7 @@ function formatDate(dateString) {
     const date = new Date(dateString);
     return date.toLocaleDateString('th-TH') + ' ' + date.toLocaleTimeString('th-TH');
 }
-
-const value = ref('https://osp101.dev')
+const value = ref(`http://10.199.7.28/vote/${props.vote.id}/${props.vote.qrcode}`)
 
 const form = useForm({
     name_choice: "",
